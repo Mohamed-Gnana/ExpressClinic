@@ -3,23 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.Scheduling", "ExpressClinic.Scheduling", "{3BEBDD8F-97D2-4352-8610-3C36DB6BC3B3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.Scheduling", "ExpressClinic.Scheduling", "{5F3A0E9B-1C03-4CD8-A511-C5920C96BFD2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.PatientManagement", "ExpressClinic.PatientManagement", "{2C223AF2-F0FB-4A6E-88C7-5C2723E94D6B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.StaffManagement", "ExpressClinic.StaffManagement", "{2872A5CF-B1DD-46CD-B2B1-51AC9FC3A67C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.Blilling", "ExpressClinic.Blilling", "{E188E039-26CA-4000-A90A-C558311A4D99}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.ClientManagement", "ExpressClinic.ClientManagement", "{12B05967-DB40-447F-B0E5-1566796D6C70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Domain", "ExpressClinic\ExpressClinic.Scheduling.Domain\ExpressClinic.Scheduling.Domain.csproj", "{EBB45691-2CC3-4561-9E94-3005FE4A06A1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.SharedKernal", "ExpressClinic.SharedKernal", "{B7892C0E-B283-4F1D-B4CB-4933E3865168}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Domain1", "ExpressClinic.Scheduling.Domain1\ExpressClinic.Scheduling.Domain1.csproj", "{533E821D-897E-41E8-8C3B-D66B1934214F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.RabbitMQ", "ExpressClinic.RabbitMQ", "{0BCEDDC5-BDF7-490D-A762-69395ED196B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Infrastructure", "ExpressClinic.Scheduling.Infrastructure\ExpressClinic.Scheduling.Infrastructure.csproj", "{2C30D0AC-F1AB-4179-BD0A-5322E5A91565}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.SharedKernal.Domain", "ExpressClinic.SharedKernal\ExpressClinic.SharedKernal.Domain\ExpressClinic.SharedKernal.Domain.csproj", "{128235A4-A874-476A-ABEA-C9A62686A25C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Application", "ExpressClinic.Scheduling.Application\ExpressClinic.Scheduling.Application.csproj", "{D9459C03-4BD6-46F7-B204-E2B3D79427D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.SharedKernal.Infrastructure", "ExpressClinic.SharedKernal\ExpressClinic.SharedKernal.Infrastructure\ExpressClinic.SharedKernal.Infrastructure.csproj", "{0D8100B7-FE72-4F0E-BFB5-1ACBC691A6C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Api", "ExpressClinic.Scheduling.Api\ExpressClinic.Scheduling.Api.csproj", "{60ABE833-C574-443B-BBFA-9F440D0715C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.SharedKernal.Abstraction", "ExpressClinic.SharedKernal\ExpressClinic.SharedKernal.Abstraction\ExpressClinic.SharedKernal.Abstraction.csproj", "{0F994401-3383-48C4-B4A7-993131A34505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClient.Scheduling.Abstractions", "ExpressClient.Scheduling.Abstractions\ExpressClient.Scheduling.Abstractions.csproj", "{4C325349-E8E2-46CC-B11C-4793904A0F4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Domain", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Domain\ExpressClinic.Scheduling.Domain.csproj", "{822CA7B7-5393-4CCF-806C-8294C0051022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Infrastructure", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Infrastructure\ExpressClinic.Scheduling.Infrastructure.csproj", "{B344C9D6-1230-4CDD-8158-7475E926849A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Application", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Application\ExpressClinic.Scheduling.Application.csproj", "{DA458943-2CB8-479C-B4C9-7A76EEC6D332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Abstraction", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Abstraction\ExpressClinic.Scheduling.Abstraction.csproj", "{44E3E8CE-3AAA-48B3-9657-DC8680123D27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Api", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Api\ExpressClinic.Scheduling.Api.csproj", "{5E73FA93-CC83-4B71-A9F0-A676588C8251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Shared", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Shared\ExpressClinic.Scheduling.Shared.csproj", "{66553B1D-305C-41AA-9307-91861D8BEBFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Gateway", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Gateway\ExpressClinic.Scheduling.Gateway.csproj", "{238C83AB-D2E5-421F-869C-0D244D386AD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,41 +39,61 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EBB45691-2CC3-4561-9E94-3005FE4A06A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EBB45691-2CC3-4561-9E94-3005FE4A06A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EBB45691-2CC3-4561-9E94-3005FE4A06A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EBB45691-2CC3-4561-9E94-3005FE4A06A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{533E821D-897E-41E8-8C3B-D66B1934214F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{533E821D-897E-41E8-8C3B-D66B1934214F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{533E821D-897E-41E8-8C3B-D66B1934214F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{533E821D-897E-41E8-8C3B-D66B1934214F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C30D0AC-F1AB-4179-BD0A-5322E5A91565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C30D0AC-F1AB-4179-BD0A-5322E5A91565}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C30D0AC-F1AB-4179-BD0A-5322E5A91565}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C30D0AC-F1AB-4179-BD0A-5322E5A91565}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9459C03-4BD6-46F7-B204-E2B3D79427D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9459C03-4BD6-46F7-B204-E2B3D79427D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9459C03-4BD6-46F7-B204-E2B3D79427D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9459C03-4BD6-46F7-B204-E2B3D79427D5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60ABE833-C574-443B-BBFA-9F440D0715C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60ABE833-C574-443B-BBFA-9F440D0715C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60ABE833-C574-443B-BBFA-9F440D0715C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60ABE833-C574-443B-BBFA-9F440D0715C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C325349-E8E2-46CC-B11C-4793904A0F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C325349-E8E2-46CC-B11C-4793904A0F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C325349-E8E2-46CC-B11C-4793904A0F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C325349-E8E2-46CC-B11C-4793904A0F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{128235A4-A874-476A-ABEA-C9A62686A25C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128235A4-A874-476A-ABEA-C9A62686A25C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128235A4-A874-476A-ABEA-C9A62686A25C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128235A4-A874-476A-ABEA-C9A62686A25C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D8100B7-FE72-4F0E-BFB5-1ACBC691A6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D8100B7-FE72-4F0E-BFB5-1ACBC691A6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D8100B7-FE72-4F0E-BFB5-1ACBC691A6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D8100B7-FE72-4F0E-BFB5-1ACBC691A6C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F994401-3383-48C4-B4A7-993131A34505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F994401-3383-48C4-B4A7-993131A34505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F994401-3383-48C4-B4A7-993131A34505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F994401-3383-48C4-B4A7-993131A34505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822CA7B7-5393-4CCF-806C-8294C0051022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822CA7B7-5393-4CCF-806C-8294C0051022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822CA7B7-5393-4CCF-806C-8294C0051022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822CA7B7-5393-4CCF-806C-8294C0051022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B344C9D6-1230-4CDD-8158-7475E926849A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B344C9D6-1230-4CDD-8158-7475E926849A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B344C9D6-1230-4CDD-8158-7475E926849A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B344C9D6-1230-4CDD-8158-7475E926849A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA458943-2CB8-479C-B4C9-7A76EEC6D332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA458943-2CB8-479C-B4C9-7A76EEC6D332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA458943-2CB8-479C-B4C9-7A76EEC6D332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA458943-2CB8-479C-B4C9-7A76EEC6D332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44E3E8CE-3AAA-48B3-9657-DC8680123D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44E3E8CE-3AAA-48B3-9657-DC8680123D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44E3E8CE-3AAA-48B3-9657-DC8680123D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44E3E8CE-3AAA-48B3-9657-DC8680123D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E73FA93-CC83-4B71-A9F0-A676588C8251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E73FA93-CC83-4B71-A9F0-A676588C8251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E73FA93-CC83-4B71-A9F0-A676588C8251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E73FA93-CC83-4B71-A9F0-A676588C8251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66553B1D-305C-41AA-9307-91861D8BEBFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66553B1D-305C-41AA-9307-91861D8BEBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66553B1D-305C-41AA-9307-91861D8BEBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66553B1D-305C-41AA-9307-91861D8BEBFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238C83AB-D2E5-421F-869C-0D244D386AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238C83AB-D2E5-421F-869C-0D244D386AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238C83AB-D2E5-421F-869C-0D244D386AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238C83AB-D2E5-421F-869C-0D244D386AD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{EBB45691-2CC3-4561-9E94-3005FE4A06A1} = {3BEBDD8F-97D2-4352-8610-3C36DB6BC3B3}
-		{533E821D-897E-41E8-8C3B-D66B1934214F} = {3BEBDD8F-97D2-4352-8610-3C36DB6BC3B3}
-		{2C30D0AC-F1AB-4179-BD0A-5322E5A91565} = {3BEBDD8F-97D2-4352-8610-3C36DB6BC3B3}
-		{D9459C03-4BD6-46F7-B204-E2B3D79427D5} = {3BEBDD8F-97D2-4352-8610-3C36DB6BC3B3}
-		{60ABE833-C574-443B-BBFA-9F440D0715C3} = {3BEBDD8F-97D2-4352-8610-3C36DB6BC3B3}
-		{4C325349-E8E2-46CC-B11C-4793904A0F4F} = {3BEBDD8F-97D2-4352-8610-3C36DB6BC3B3}
+		{128235A4-A874-476A-ABEA-C9A62686A25C} = {B7892C0E-B283-4F1D-B4CB-4933E3865168}
+		{0D8100B7-FE72-4F0E-BFB5-1ACBC691A6C6} = {B7892C0E-B283-4F1D-B4CB-4933E3865168}
+		{0F994401-3383-48C4-B4A7-993131A34505} = {B7892C0E-B283-4F1D-B4CB-4933E3865168}
+		{822CA7B7-5393-4CCF-806C-8294C0051022} = {5F3A0E9B-1C03-4CD8-A511-C5920C96BFD2}
+		{B344C9D6-1230-4CDD-8158-7475E926849A} = {5F3A0E9B-1C03-4CD8-A511-C5920C96BFD2}
+		{DA458943-2CB8-479C-B4C9-7A76EEC6D332} = {5F3A0E9B-1C03-4CD8-A511-C5920C96BFD2}
+		{44E3E8CE-3AAA-48B3-9657-DC8680123D27} = {5F3A0E9B-1C03-4CD8-A511-C5920C96BFD2}
+		{5E73FA93-CC83-4B71-A9F0-A676588C8251} = {5F3A0E9B-1C03-4CD8-A511-C5920C96BFD2}
+		{66553B1D-305C-41AA-9307-91861D8BEBFA} = {5F3A0E9B-1C03-4CD8-A511-C5920C96BFD2}
+		{238C83AB-D2E5-421F-869C-0D244D386AD6} = {5F3A0E9B-1C03-4CD8-A511-C5920C96BFD2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1ECDCDC-DF17-4484-9357-8F969B779E1B}

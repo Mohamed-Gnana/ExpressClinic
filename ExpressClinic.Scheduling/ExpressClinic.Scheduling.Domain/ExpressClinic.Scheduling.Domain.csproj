@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Aggregate\Builder\" />
+    <Folder Include="Constants\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExpressClinic.SharedKernal\ExpressClinic.SharedKernal.Domain\ExpressClinic.SharedKernal.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
