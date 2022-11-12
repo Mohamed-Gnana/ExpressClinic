@@ -9,9 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExpressClinic.Scheduling.Domain.Aggregate
+namespace ExpressClinic.Scheduling.Domain.ScheduleAggregate
 {
-    public class Appointment: BaseEntity<Guid>
+    public class Appointment : BaseEntityWithDomainEventsAndIntegrationEvents<Guid>
     {
         #region Private Fields
 
@@ -125,7 +125,7 @@ namespace ExpressClinic.Scheduling.Domain.Aggregate
             _roomId = newRoomId;
 
             var appointmentUpdatedEvent = new AppointmentUpdatedEvent(this);
-            this.Events.Add(appointmentUpdatedEvent);
+            Events.Add(appointmentUpdatedEvent);
         }
 
         public void UpdateDoctor(int newDoctorId)
@@ -136,7 +136,7 @@ namespace ExpressClinic.Scheduling.Domain.Aggregate
             _doctorId = newDoctorId;
 
             var appointmentUpdatedEvent = new AppointmentUpdatedEvent(this);
-            this.Events.Add(appointmentUpdatedEvent);
+            Events.Add(appointmentUpdatedEvent);
         }
 
         public void UpdateStartTime(DateTimeOffset newStartTime, Action scheduleHandler)
@@ -148,7 +148,7 @@ namespace ExpressClinic.Scheduling.Domain.Aggregate
             scheduleHandler?.Invoke();
 
             var appointmentUpdatedEvent = new AppointmentUpdatedEvent(this);
-            this.Events.Add(appointmentUpdatedEvent);
+            Events.Add(appointmentUpdatedEvent);
         }
 
         public void UpdateTitle(string newTitle)
@@ -158,7 +158,7 @@ namespace ExpressClinic.Scheduling.Domain.Aggregate
             _title = newTitle;
 
             var appointmentUpdatedEvent = new AppointmentUpdatedEvent(this);
-            this.Events.Add(appointmentUpdatedEvent);
+            Events.Add(appointmentUpdatedEvent);
         }
 
         public void UpdateAppointmentType(AppointmentTypeDTO appointmentType, Action scheduleHandler)
@@ -171,7 +171,7 @@ namespace ExpressClinic.Scheduling.Domain.Aggregate
             scheduleHandler?.Invoke();
 
             var appointmentUpdatedEvent = new AppointmentUpdatedEvent(this);
-            this.Events.Add(appointmentUpdatedEvent);
+            Events.Add(appointmentUpdatedEvent);
         }
 
         public void Confirm(DateTimeOffset dateConfirmed)
@@ -181,7 +181,7 @@ namespace ExpressClinic.Scheduling.Domain.Aggregate
             DateTimeConfirmed = dateConfirmed.DateTime;
 
             var appointmentConfirmedEvent = new AppointmentConfirmedEvent(this);
-            this.Events.Add(appointmentConfirmedEvent);
+            Events.Add(appointmentConfirmedEvent);
         }
         #endregion
     }

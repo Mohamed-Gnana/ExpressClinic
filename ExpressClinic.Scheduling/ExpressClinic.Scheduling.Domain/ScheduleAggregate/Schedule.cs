@@ -1,11 +1,11 @@
 ﻿using Ardalis.GuardClauses;
-using ExpressClinic.Scheduling.Domain.Aggregate.Guards;
 using ExpressClinic.Scheduling.Domain.Events.DomainEvents;
+using ExpressClinic.Scheduling.Domain.ScheduleAggregate.Guards;
 using ExpressClinic.SharedKernal.Domain.Aggregates;
 
-namespace ExpressClinic.Scheduling.Domain.Aggregate
+namespace ExpressClinic.Scheduling.Domain.ScheduleAggregate
 {
-    public class Schedule: BaseEntity<Guid>, IAggregateRoot
+    public class Schedule : BaseEntityWithDomainEventsAndIntegrationEvents<Guid>, IAggregateRoot
     {
         #region Priavate Fields
         private int _clinicId;
@@ -17,14 +17,14 @@ namespace ExpressClinic.Scheduling.Domain.Aggregate
         public Schedule(Guid id, int clinicId)
         {
             Id = id;
-            this._clinicId = clinicId;
+            _clinicId = clinicId;
         }
 
         public Schedule(Guid id, DateTimeOffset dateRange, int clinicId)
         {
             Id = id;
-            this._dateRange = dateRange;
-            this._clinicId = clinicId;
+            _dateRange = dateRange;
+            _clinicId = clinicId;
         }
         #endregion
 
@@ -57,7 +57,7 @@ namespace ExpressClinic.Scheduling.Domain.Aggregate
             MarkConflictingAppointments();
 
             var appointmentScheduledEvent = new AppointmentScheduledEvent(appointment);
-            this.Events.Add(appointmentScheduledEvent);
+            Events.Add(appointmentScheduledEvent);
 
             return appointment;
         }
@@ -76,12 +76,12 @@ namespace ExpressClinic.Scheduling.Domain.Aggregate
             MarkConflictingAppointments();
 
             var appointmentDeletedEvent = new AppointmentDeletedEvent(appointment);
-            this.Events.Add(appointmentDeletedEvent);
+            Events.Add(appointmentDeletedEvent);
         }
 
         private void MarkConflictingAppointments()
         {
-            foreach(var appointment in _appointments)
+            foreach (var appointment in _appointments)
             {
                 var potentiallyConflictingAppointmentsForPatients = _appointments
                     .Where(a => a.PatientId == appointment.PatientId &&

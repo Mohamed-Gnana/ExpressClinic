@@ -1,4 +1,4 @@
-﻿using ExpressClinic.Scheduling.Domain.Aggregate;
+﻿using ExpressClinic.Scheduling.Domain.ScheduleAggregate;
 using ExpressClinic.SharedKernal.Domain.Events.DomainEvents;
 using System;
 using System.Collections.Generic;

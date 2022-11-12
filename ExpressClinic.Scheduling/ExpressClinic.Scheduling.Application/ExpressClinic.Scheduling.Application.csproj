@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ExpressClinic.Scheduling.Abstraction\ExpressClinic.Scheduling.Abstraction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ScheduleAggregate\Appointment\" />
+  </ItemGroup>
+
 </Project>
