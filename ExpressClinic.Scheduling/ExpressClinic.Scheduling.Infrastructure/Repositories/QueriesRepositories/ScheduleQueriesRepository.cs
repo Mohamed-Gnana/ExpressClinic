@@ -1,6 +1,7 @@
 ﻿using ExpressClinic.Scheduling.Abstraction.IRepositories.IQueriesRepositories;
 using ExpressClinic.Scheduling.Domain.ScheduleAggregate;
 using ExpressClinic.Scheduling.Infrastructure.Data.SQLServer;
+using ExpressClinic.Scheduling.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -48,6 +49,11 @@ namespace ExpressClinic.Scheduling.Infrastructure.Repositories.QueriesRepositori
         public async Task<List<Schedule>> ListAsync(Expression<Func<Schedule, bool>> spec)
         {
             return await _context.Schedules.Where(spec).ToListAsync();
+        }
+
+        public async Task<List<ScheduleDto>> GetAll(Expression<Func<List<Schedule>, bool>> spec)
+        {
+            return new List<ScheduleDto>();
         }
     }
 }
