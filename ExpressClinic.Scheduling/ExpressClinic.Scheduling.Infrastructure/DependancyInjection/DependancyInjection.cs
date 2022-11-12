@@ -4,6 +4,7 @@ using ExpressClinic.Scheduling.Infrastructure.Data.SQLServer;
 using ExpressClinic.Scheduling.Infrastructure.Repositories;
 using ExpressClinic.Scheduling.Infrastructure.Repositories.QueriesRepositories;
 using ExpressClinic.SharedKernal.Infrastructure.DependancyInjection;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,6 +23,8 @@ namespace ExpressClinic.Scheduling.Infrastructure.DependancyInjection
 
             services.AddTransient<IScheduleCommandsRepository, ScheduleCommandsRepository>();
             services.AddTransient<IScheduleQueriesRepository, ScheduleQueriesRepository>();
+
+            services.AddTransient<IMediator, Mediator>();
 
             services.AddSharedKernalInfrastructure();
 
