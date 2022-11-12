@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.Scheduling", "ExpressClinic.Scheduling", "{5F3A0E9B-1C03-4CD8-A511-C5920C96BFD2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.StaffManagement", "ExpressClinic.StaffManagement", "{2872A5CF-B1DD-46CD-B2B1-51AC9FC3A67C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.ClinicManagement", "ExpressClinic.ClinicManagement", "{2872A5CF-B1DD-46CD-B2B1-51AC9FC3A67C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.ClientManagement", "ExpressClinic.ClientManagement", "{12B05967-DB40-447F-B0E5-1566796D6C70}"
 EndProject
@@ -13,25 +13,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.SharedKernal"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressClinic.RabbitMQ", "ExpressClinic.RabbitMQ", "{0BCEDDC5-BDF7-490D-A762-69395ED196B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.SharedKernal.Domain", "ExpressClinic.SharedKernal\ExpressClinic.SharedKernal.Domain\ExpressClinic.SharedKernal.Domain.csproj", "{128235A4-A874-476A-ABEA-C9A62686A25C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressClinic.SharedKernal.Domain", "ExpressClinic.SharedKernal\ExpressClinic.SharedKernal.Domain\ExpressClinic.SharedKernal.Domain.csproj", "{128235A4-A874-476A-ABEA-C9A62686A25C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.SharedKernal.Infrastructure", "ExpressClinic.SharedKernal\ExpressClinic.SharedKernal.Infrastructure\ExpressClinic.SharedKernal.Infrastructure.csproj", "{0D8100B7-FE72-4F0E-BFB5-1ACBC691A6C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressClinic.SharedKernal.Infrastructure", "ExpressClinic.SharedKernal\ExpressClinic.SharedKernal.Infrastructure\ExpressClinic.SharedKernal.Infrastructure.csproj", "{0D8100B7-FE72-4F0E-BFB5-1ACBC691A6C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.SharedKernal.Abstraction", "ExpressClinic.SharedKernal\ExpressClinic.SharedKernal.Abstraction\ExpressClinic.SharedKernal.Abstraction.csproj", "{0F994401-3383-48C4-B4A7-993131A34505}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressClinic.SharedKernal.Abstraction", "ExpressClinic.SharedKernal\ExpressClinic.SharedKernal.Abstraction\ExpressClinic.SharedKernal.Abstraction.csproj", "{0F994401-3383-48C4-B4A7-993131A34505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Domain", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Domain\ExpressClinic.Scheduling.Domain.csproj", "{822CA7B7-5393-4CCF-806C-8294C0051022}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressClinic.Scheduling.Domain", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Domain\ExpressClinic.Scheduling.Domain.csproj", "{822CA7B7-5393-4CCF-806C-8294C0051022}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Infrastructure", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Infrastructure\ExpressClinic.Scheduling.Infrastructure.csproj", "{B344C9D6-1230-4CDD-8158-7475E926849A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressClinic.Scheduling.Infrastructure", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Infrastructure\ExpressClinic.Scheduling.Infrastructure.csproj", "{B344C9D6-1230-4CDD-8158-7475E926849A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Application", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Application\ExpressClinic.Scheduling.Application.csproj", "{DA458943-2CB8-479C-B4C9-7A76EEC6D332}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressClinic.Scheduling.Application", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Application\ExpressClinic.Scheduling.Application.csproj", "{DA458943-2CB8-479C-B4C9-7A76EEC6D332}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Abstraction", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Abstraction\ExpressClinic.Scheduling.Abstraction.csproj", "{44E3E8CE-3AAA-48B3-9657-DC8680123D27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressClinic.Scheduling.Abstraction", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Abstraction\ExpressClinic.Scheduling.Abstraction.csproj", "{44E3E8CE-3AAA-48B3-9657-DC8680123D27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Api", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Api\ExpressClinic.Scheduling.Api.csproj", "{5E73FA93-CC83-4B71-A9F0-A676588C8251}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressClinic.Scheduling.Api", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Api\ExpressClinic.Scheduling.Api.csproj", "{5E73FA93-CC83-4B71-A9F0-A676588C8251}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Shared", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Shared\ExpressClinic.Scheduling.Shared.csproj", "{66553B1D-305C-41AA-9307-91861D8BEBFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressClinic.Scheduling.Shared", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Shared\ExpressClinic.Scheduling.Shared.csproj", "{66553B1D-305C-41AA-9307-91861D8BEBFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressClinic.Scheduling.Gateway", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Gateway\ExpressClinic.Scheduling.Gateway.csproj", "{238C83AB-D2E5-421F-869C-0D244D386AD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressClinic.Scheduling.Gateway", "ExpressClinic.Scheduling\ExpressClinic.Scheduling.Gateway\ExpressClinic.Scheduling.Gateway.csproj", "{238C83AB-D2E5-421F-869C-0D244D386AD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -20,7 +20,7 @@ namespace ExpressClinic.Scheduling.Application.ScheduleAggregate.Schedule.Comman
 
         public async Task<Domain.ScheduleAggregate.Schedule> Handle(CreateScheduleCommand command, CancellationToken cancellationToken)
         {
-            var scheduleFactory = ScheduleFactory.Create(command.ClientId)
+            var scheduleFactory = ScheduleFactory.Create(command.ClinicId)
                                             .WithStartDate(command.Start)
                                             .WithEndDate(command.End)
                                             .WithAppointments(command.AppointmentIds);

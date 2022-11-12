@@ -9,7 +9,7 @@ namespace ExpressClinic.Scheduling.Application.ScheduleAggregate.Schedule.Comman
 {
     public class CreateScheduleCommand: IRequest<Domain.ScheduleAggregate.Schedule>
     {
-        public int ClientId { get; set; }
+        public int ClinicId { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
         public List<Guid> AppointmentIds { get; set; } = new List<Guid>();

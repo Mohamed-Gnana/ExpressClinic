@@ -32,7 +32,7 @@ namespace ExpressClinic.Scheduling.Infrastructure.Data.SQLServer
 
             var entitiesWithEvents = ChangeTracker
                 .Entries()
-                .Select(x => x.Entity as BaseEntityWithDomainEvents<Guid>)
+                .Select(x => x.Entity as BaseEntityWithDomainEventsAndIntegrationEvents<Guid>)
                 .Where(x => x?.Events is not null && x.Events.Any())
                 .ToArray();
 
