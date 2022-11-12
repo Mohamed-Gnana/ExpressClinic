@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\ExpressClinic.SharedKernal\ExpressClinic.SharedKernal.Abstraction\ExpressClinic.SharedKernal.Abstraction.csproj" />
     <ProjectReference Include="..\ExpressClinic.Scheduling.Domain\ExpressClinic.Scheduling.Domain.csproj" />
+    <ProjectReference Include="..\ExpressClinic.Scheduling.Shared\ExpressClinic.Scheduling.Shared.csproj" />
   </ItemGroup>
 
 </Project>
